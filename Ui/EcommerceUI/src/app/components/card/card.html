@@ -1,0 +1,16 @@
+
+
+
+
+<div class="card" style="width: 18rem;">
+
+   <div class="card-body">
+     <h3>{{item.fullName}}</h3>
+     <!-- <h5 class="card-title">{{item.fullname}}</h5> -->
+      
+     Email: <p  class="card-text d-inline">{{item.email}}</p> <br>
+     <a class="btn btn-warning " [routerLink]="[ '/home/edit' , item.id]" >Edit</a>
+     <span class="mx-4"></span>
+     <a class="btn btn-danger" [routerLink]="['/home/delete', item.id]" >Delete</a>
+  </div>
+</div>

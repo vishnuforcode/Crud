@@ -1,0 +1,32 @@
+<div class="col-6 mx-4">
+
+
+
+<form [formGroup]="deleteData" (submit)="onDelete(deleteData.value.id)" >
+ <p>item : {{id}}</p>
+  <div class="mb-3">
+    <label  class="form-label">Id</label>
+    <input type="number" class="form-control" formControlName="id" >
+  </div> 
+  
+  <div class="mb-3">
+    <label  class="form-label">Full Name</label>
+    <input type="text" class="form-control" formControlName="FullName">
+  </div>
+
+  <div class="mb-3">
+    <label  class="form-label">Email address</label>
+    <input type="email" formControlName="Email" class="form-control" aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" >Password</label>
+    <input type="password" formControlName="Password" class="form-control" >
+  </div>
+  
+  <button type="submit"  class="btn btn-primary">Delete</button>
+  
+</form>
+
+
+</div>

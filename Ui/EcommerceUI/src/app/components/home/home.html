@@ -1,0 +1,11 @@
+<p>home works !</p>
+
+
+
+<div class="d-flex flex-wrap gap-3 ">
+@for (item of allProducts$ | async ; track $index){
+
+   
+    <app-card class="m-3" [item]="item"></app-card>
+}
+</div>
